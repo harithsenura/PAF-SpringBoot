@@ -128,8 +128,8 @@ const PostDetailModal = ({ isOpen, post, onClose }) => {
       // Update local state
       setCurrentPost(updatedPost);
     } catch (error) {
-      console.error("Error deleting comment:", error);
-      alert("Failed to delete comment. Please try again.");
+      console.error("Error while deleting comment:", error);
+      alert("Failed to delete comment. Please try again !");
     } finally {
       setIsSubmitting(false);
     }
