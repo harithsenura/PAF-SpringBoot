@@ -67,7 +67,7 @@ const PostDetailModal = ({ isOpen, post, onClose }) => {
       setCurrentPost(updatedPost);
       setNewComment("");
     } catch (error) {
-      console.error("Error adding comment:", error);
+      console.error("Error while adding comment:", error);
       alert("Failed to add comment. Please try again.");
     } finally {
       setIsSubmitting(false);
