@@ -198,7 +198,14 @@ const HomePage = () => {
                   <button className="follow-btn">Follow</button>
                 </div>
 
-                
+                <div className="suggested-talent">
+                  <img src="/placeholder.svg" alt="Suggested Talent" className="suggested-avatar" />
+                  <div className="suggested-info">
+                    <h4>Rohan De Silva</h4>
+                    <p>Photographer</p>
+                  </div>
+                  <button className="follow-btn">Follow</button>
+                </div>
 
                 <div className="suggested-talent">
                   <img src="/placeholder.svg" alt="Suggested Talent" className="suggested-avatar" />
