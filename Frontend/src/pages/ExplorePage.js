@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import TalentPost from "../components/TalentPost"
 import { PostService } from "../services/PostService"
+import "./ExplorePage.css"
 
 const ExplorePage = () => {
   const [activeCategory, setActiveCategory] = useState("all")
