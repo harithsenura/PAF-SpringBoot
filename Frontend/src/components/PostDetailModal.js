@@ -106,7 +106,7 @@ const PostDetailModal = ({ isOpen, post, onClose }) => {
       setEditCommentText("");
     } catch (error) {
       console.error("Error while updating comment:", error);
-      alert("Failed to update comment. Please try again.");
+      alert("Failed to update comment. Please try again ! ");
     } finally {
       setIsSubmitting(false);
     }
