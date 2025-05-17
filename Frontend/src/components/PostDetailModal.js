@@ -182,7 +182,7 @@ const PostDetailModal = ({ isOpen, post, onClose }) => {
       setReplyingTo(null);
       setReplyText("");
     } catch (error) {
-      console.error("Error adding reply:", error);
+      console.error("Error while adding reply:", error);
       alert(`Failed to add reply: ${error.message}. Please try again.`);
     } finally {
       setIsSubmitting(false);
