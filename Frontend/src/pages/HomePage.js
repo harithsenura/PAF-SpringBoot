@@ -135,7 +135,7 @@ const HomePage = () => {
     <div className="home-page">
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Share Your Talents With The World.........11.!</h1>
+          <h1>Share Your Talents With The World</h1>
           <p>Connect with creative minds, showcase your work, and grow your business</p>
           <button className="cta-button" onClick={() => setIsModalOpen(true)}>
             Share Your Talent
