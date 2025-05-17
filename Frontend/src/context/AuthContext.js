@@ -3,7 +3,7 @@ import React, { createContext, useState, useEffect } from 'react';
 export const AuthContext = createContext(null);
 
 // API base URL
-const API_URL = 'http://localhost:8080/api/auth';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
 
 export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
