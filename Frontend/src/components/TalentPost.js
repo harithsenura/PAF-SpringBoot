@@ -42,7 +42,7 @@ const TalentPost = ({ post, onViewDetails }) => {
       setLikesCount(updatedPost.likes)
       setIsLiked(updatedPost.likedBy.includes(currentUser.id))
     } catch (error) {
-      console.error("Error liking post:", error)
+      console.error("Error when liking post:", error)
       // Fallback to local state if API fails
       if (isLiked) {
         setLikesCount(likesCount - 1)
