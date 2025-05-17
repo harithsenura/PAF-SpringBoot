@@ -1,5 +1,5 @@
 // Backend API URL
-const API_URL = "http://localhost:8080/api/notifications";
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
 
 export const NotificationService = {
   // Get all notifications for a user
