@@ -35,7 +35,7 @@ const CreatePostModal = ({ isOpen, onClose, onPostCreated }) => {
     } else if (file.type.startsWith("video/")) {
       setMediaType("video")
     } else {
-      alert("Please upload an image or video file.")
+      alert("Please upload an images or video file.")
       return
     }
 
