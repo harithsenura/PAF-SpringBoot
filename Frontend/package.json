@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8080",
+  "proxy": "https://paf-backend-production.up.railway.app/",
   "dependencies": {
     "@stomp/stompjs": "^7.1.1",
     "@testing-library/dom": "^10.4.0",
