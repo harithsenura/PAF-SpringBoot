@@ -20,6 +20,7 @@ const ExplorePage = () => {
     { id: "writing", name: "Writing" },
   ]
 
+  //this is for testing
   // Load posts when component mounts or category changes
   useEffect(() => {
     const loadPosts = async () => {
