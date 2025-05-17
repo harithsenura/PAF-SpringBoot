@@ -1,0 +1,62 @@
+.notification-bell-container {
+    position: relative;
+  }
+  
+  .notification-bell-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .notification-bell-button:hover {
+    color: #6366f1;
+  }
+  
+  .notification-bell-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+  }
+  
+  .notification-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    max-height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 480px) {
+    .notification-dropdown {
+      width: 300px;
+      right: -100px;
+    }
+  }
