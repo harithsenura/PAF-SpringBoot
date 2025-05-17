@@ -30,7 +30,7 @@ const TalentPost = ({ post, onViewDetails }) => {
 
   const handleLike = async () => {
     if (!currentUser) {
-      alert("Please log in to like posts")
+      alert("Please log in first to like posts")
       return
     }
 
