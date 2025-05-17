@@ -542,7 +542,35 @@ const TalentPost = ({ post, onViewDetails }) => {
                   </div>
                 )}
 
-                
+                {/* Reply form */}
+                {replyingTo === comment.id && !editingReplyId && (
+                  <div className="reply-form-container">
+                    <form className="reply-form" onSubmit={(e) => handleSubmitReply(e, comment.id)}>
+                      <input
+                        type="text"
+                        placeholder={currentUser ? "Reply as " + currentUser.firstName : "Add a reply..."}
+                        value={replyText}
+                        onChange={(e) => setReplyText(e.target.value)}
+                        className="reply-input"
+                        autoFocus
+                        disabled={isSubmitting}
+                      />
+                      <div className="reply-form-actions">
+                        <button
+                          type="button"
+                          className="cancel-reply"
+                          onClick={handleCancelReply}
+                          disabled={isSubmitting}
+                        >
+                          Cancel
+                        </button>
+                        <button type="submit" className="submit-reply" disabled={isSubmitting}>
+                          {isSubmitting ? "Sending..." : "Reply"}
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                )}
               </div>
             ))}
           </div>
