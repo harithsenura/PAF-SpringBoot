@@ -5,7 +5,7 @@ import { NotificationContext } from '../context/NotificationContext';
 import NotificationItem from './NotificationItem';
 import './NotificationList.css';
 
-//notification function ... 
+//notification function is here...
 const NotificationList = ({ onClose }) => {
   const { notifications, loading, markAllAsRead } = useContext(NotificationContext);
   
