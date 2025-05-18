@@ -5,6 +5,7 @@ import { NotificationContext } from '../context/NotificationContext';
 import NotificationItem from './NotificationItem';
 import './NotificationList.css';
 
+//notification function ...
 const NotificationList = ({ onClose }) => {
   const { notifications, loading, markAllAsRead } = useContext(NotificationContext);
   
@@ -22,7 +23,7 @@ const NotificationList = ({ onClose }) => {
             onClick={handleMarkAllAsRead}
             disabled={loading || notifications.every(n => n.read)}
           >
-            Mark all as read
+            Mark all as read 
           </button>
           <button className="close-button" onClick={onClose}>
             <svg 
